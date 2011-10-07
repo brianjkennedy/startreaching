@@ -1,0 +1,5 @@
+*{ margin:0; padding:0; }
+
+body {background:#44b6ce url(/images/back.jpg) no-repeat center top;}
+#shell {width:990px; margin:0 auto; position:relative;}
+#landing {}
