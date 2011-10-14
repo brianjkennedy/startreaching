@@ -1,0 +1,33 @@
+[01-Oct-2011 17:13:13] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:13:39] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:13:48] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:14:14] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:14:23] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/weekly_ad/src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:14:44] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../../src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:14:49] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:14:53] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/src/facebook.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 8
+[01-Oct-2011 17:24:19] PHP Fatal error:  Call to a member function pageid() on a non-object in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 17
+[01-Oct-2011 17:24:28] PHP Fatal error:  Call to a member function pageid() on a non-object in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 17
+[01-Oct-2011 17:24:50] PHP Fatal error:  Call to a member function pageid() on a non-object in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 17
+[01-Oct-2011 17:25:03] PHP Fatal error:  Call to undefined method Facebook::pageid() in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 17
+[01-Oct-2011 17:27:31] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home/justixd/public_html/weekly_ad/src/facebook.php on line 560
+[01-Oct-2011 17:27:38] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home/justixd/public_html/weekly_ad/src/facebook.php on line 560
+[01-Oct-2011 17:27:52] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home/justixd/public_html/weekly_ad/src/facebook.php on line 560
+[01-Oct-2011 17:42:25] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home/justixd/public_html/weekly_ad/src/facebook.php on line 560
+[01-Oct-2011 17:42:42] PHP Fatal error:  Uncaught GraphMethodException: Unsupported get request.
+  thrown in /home/justixd/public_html/weekly_ad/src/facebook.php on line 560
+[01-Oct-2011 18:05:18] PHP Fatal error:  Cannot use object of type stdClass as array in /home/justixd/public_html/weekly_ad/application/views/display.php on line 73
+[01-Oct-2011 18:05:56] PHP Fatal error:  Cannot use object of type stdClass as array in /home/justixd/public_html/weekly_ad/application/views/display.php on line 73
+[01-Oct-2011 18:07:42] PHP Fatal error:  Cannot use object of type stdClass as array in /home/justixd/public_html/weekly_ad/application/views/display.php on line 73
+[01-Oct-2011 18:09:30] PHP Fatal error:  Cannot use object of type stdClass as array in /home/justixd/public_html/weekly_ad/application/views/display.php on line 73
+[01-Oct-2011 18:09:36] PHP Fatal error:  Cannot use object of type stdClass as array in /home/justixd/public_html/weekly_ad/application/views/display.php on line 73
+[01-Oct-2011 18:10:12] PHP Fatal error:  Cannot use object of type stdClass as array in /home/justixd/public_html/weekly_ad/application/views/display.php on line 73
+[02-Oct-2011 18:08:01] PHP Parse error:  syntax error, unexpected T_STRING in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 43
+[02-Oct-2011 18:08:20] PHP Parse error:  syntax error, unexpected T_STRING in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 43
+[02-Oct-2011 18:08:27] PHP Parse error:  syntax error, unexpected T_STRING in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 43
+[02-Oct-2011 18:08:36] PHP Parse error:  syntax error, unexpected T_STRING in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 43
+[02-Oct-2011 18:11:23] PHP Parse error:  syntax error, unexpected T_STRING in /home/justixd/public_html/weekly_ad/application/controllers/display.php on line 43
