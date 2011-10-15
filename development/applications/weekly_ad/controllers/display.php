@@ -5,7 +5,7 @@ class Display extends CI_Controller {
 	public function index()
 	{
 	
-		require_once 'src/facebook.php';
+		require_once '../src/facebook.php';
 		
 		// Create our Application instance.
 		$facebook = new Facebook(array(
