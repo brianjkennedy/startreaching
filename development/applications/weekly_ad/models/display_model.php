@@ -46,7 +46,14 @@ class Display_model extends CI_Model {
 			$app_id = $this->session->userdata('app_id');
 			if($app_id == $row->app_id)
 			{
-				$this->getAppInfo($uid, $app_id);
+				$data = array(
+					'uid' => $uid,
+					'appid' => $app_id
+				);
+				
+				return $data;
+				
+				//$this->getAppInfo($uid, $app_id);
 			}
 			else
 			{
@@ -57,24 +64,25 @@ class Display_model extends CI_Model {
 	
 	}
 	
-	function getAppInfo($uid, $app_id) //get info necessary to run app
+	function getAppInfo($data) //get info necessary to run app
 	{	
+		$app_id = $data['appid'];
 		$query = $this->db->query("SELECT * FROM app WHERE app_id = '$app_id'");
 		$count = $query->num_rows();
 		if($count > 0)
 		{
 			$row = $query->row();
 			
-			/*$app_data = array(
+			$app_data = array(
 				'app_id' =>$app_id,
 				'app_name' => $row->app_name,
 				'app_location' => $row->app_location,
 				'content_id' => $row->content_id
 			);
 			
-			$this->session->set_userdata($app_data);*/
+//			$this->session->set_userdata($app_data);
 
-			return true;
+			return $app_data;
 		}
 	}
 	

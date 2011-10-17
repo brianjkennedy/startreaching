@@ -56,7 +56,7 @@ class Display extends CI_Controller {
 		
 		if($userinfo)
 		{
-			
+			$this->canUseApp($userinfo);	
 		}
 		else
 		{
@@ -65,14 +65,49 @@ class Display extends CI_Controller {
 		
 	}
 	
-	function getAd()
+	function canUseApp($data)
+	{
+		$canuse = $this->display_model->canUseApp($data);
+		
+		if($canuse)
+		{
+			$this->getAppInfo($canuse);
+		}
+		else
+		{
+			$this->load->view('error');
+		}
+	}
+
+
+	function getAppInfo($data)
+	{
+
+		$appinfo = $this->display_model->getAppInfo($data);
+		
+		if($appinfo)
+		{
+			$this->getAd($appinfo);
+		}
+		else
+		{
+			$this->load->view('error');
+		}
+		
+	}	
+	
+	
+	function getAd($data)
 	{
 		$this->load->helper('file');
 		
-		$data = $this->session->userdata();
-		
-		$location = "ads/".$data->ad_location;
+
+		$location = "/assets/weekly_ad/ads/".$data['app_location'];
 		$files = get_filenames($location);
+		
+		var_dump($location);
+		
+		//sort through this cluster****
 		sort($files);
 
 		$info = array(
