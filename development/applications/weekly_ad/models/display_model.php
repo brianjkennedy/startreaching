@@ -73,17 +73,41 @@ class Display_model extends CI_Model {
 		{
 			$row = $query->row();
 			
-			$app_data = array(
+			/*
+$app_data = array(
 				'app_id' =>$app_id,
 				'app_name' => $row->app_name,
 				'app_location' => $row->app_location,
 				'content_id' => $row->content_id
 			);
+*/
+			$app_data = $row->content_id;
 			
 //			$this->session->set_userdata($app_data);
 
 			return $app_data;
 		}
+	}
+	
+	function getContent($data)
+	{
+		$cid = $data['content_id'];
+
+		$query = $this->db->query("SELECT * FROM content WHERE content_id = '$cid'");
+		$count = $query->num_rows();
+		
+		if($count > 0)
+		{
+			$row = $query->row();
+			
+			$content = array(
+				'text' => $row->content_text,
+				'images' => $row->content_images
+			);
+			
+			return $content;
+		}
+	
 	}
 	
 }
