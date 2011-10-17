@@ -3,9 +3,10 @@
 class Display extends CI_Controller {
 
 	public function index()
-	{
+	{	
+		$appid = '1'; //weekly ad is setup as '1' in db
 	
-		require_once '../src/facebook.php';
+		require_once 'applications/weekly_ad/src/facebook.php';
 		
 		// Create our Application instance.
 		$facebook = new Facebook(array(
@@ -16,15 +17,31 @@ class Display extends CI_Controller {
 		
 		$signed_request = $facebook->getSignedRequest();
 		
-		$pageid = $signed_request['page']['id'];
+		//$pageid = $signed_request['page']['id'];
+		$pageid = '169433343107625';
 		
+		/*SETUP SESSION FOR APP AND PAGE ID*/
+		$sesh = array (
+			'app_id' => $appid,
+			'page_id' => $pageid
+		);
+		
+		$this->session->set_userdata($sesh);
+		
+		$this->checkPage();
+		
+	}
+	
+	function checkPage()
+	{	
+		$pageid = $this->session->userdata('page_id');
 		$this->load->model('display_model');
+
 		$data = $this->display_model->checkPage($pageid);
 		
 		if($data)
 		{
-			//$this->load->view('display', $data);
-			$this->getAd($data);
+			$this->getUserAppInfo($data);
 		}
 		else
 		{
@@ -33,11 +50,28 @@ class Display extends CI_Controller {
 		
 	}
 	
-	function getAd($data)
+	function getUserAppInfo($data)
+	{
+		$userinfo = $this->display_model->getUserInfo($data);
+		
+		if($userinfo)
+		{
+			
+		}
+		else
+		{
+			$this->load->view('error');
+		}
+		
+	}
+	
+	function getAd()
 	{
 		$this->load->helper('file');
 		
-		$location = "ads/".$data->location;
+		$data = $this->session->userdata();
+		
+		$location = "ads/".$data->ad_location;
 		$files = get_filenames($location);
 		sort($files);
 

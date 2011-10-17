@@ -48,9 +48,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'brianjk1_reach';
-$db['default']['password'] = 'st@rt1234';
-$db['default']['database'] = 'brianjk1_apps';
+$db['default']['username'] = 'root'; //'brianjk1_reach';
+$db['default']['password'] = 'root'; //'st@rt1234';
+$db['default']['database'] = 'brianjk1_dev';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
