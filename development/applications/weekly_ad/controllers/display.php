@@ -87,14 +87,29 @@ class Display extends CI_Controller {
 		
 		if($appinfo)
 		{
-			$this->getAd($appinfo);
+			$this->getContent($appinfo);
 		}
 		else
 		{
 			$this->load->view('error');
 		}
 		
-	}	
+	}
+	
+	
+	function getContent($data)
+	{
+		$content = $this->display_model->getContent($data);
+		
+		if($content)
+		{
+			$this->getAd($content);
+		}
+		else
+		{
+			$this->load->view('error');
+		}
+	}
 	
 	
 	function getAd($data)
@@ -102,10 +117,8 @@ class Display extends CI_Controller {
 		$this->load->helper('file');
 		
 
-		$location = "/assets/weekly_ad/ads/".$data['app_location'];
+		$location = "assets/weekly_ad/ads/".$data['images'];
 		$files = get_filenames($location);
-		
-		var_dump($location);
 		
 		//sort through this cluster****
 		sort($files);
