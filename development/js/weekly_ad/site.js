@@ -1,10 +1,17 @@
 /*HAWT JS STUFF*/
 
 $(document).ready(function() {
-	$('#ads').before('<div id="nav">').cycle({
+	/*
+$('#ads').before('<div id="nav">').cycle({
 		fx: 'fade',
 		timeout: 0,
 		pager: '#nav'
+	});
+*/
+
+	$("#ads").nivoSlider({
+		effect: 'fade',
+		manualAdvance: true
 	});
 	
 	var $height;
