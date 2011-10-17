@@ -19,7 +19,7 @@ img.ad {width:505px;}
 .options {float:right;}
 	.options span {display:block; padding-left:15px;}
 	.options span a {font-size:11px; color: #7a7a7a;}
-	.print {background:transparent url(../images/print.jpg) no-repeat 0 0;}
+	.print {background:transparent url(images/print.jpg) no-repeat 0 0;}
 	.send {}
 
 .right {float:right; margin-right:10px;}
@@ -27,6 +27,6 @@ img.ad {width:505px;}
 #foot {position:relative; height:100px; margin-top:60px;}
 
 .plug {font-size:11px; color:#555; margin-top:-5px; font-family: Arial, Helvetica, sans-serif;} 
-a.reach {background:transparent url(../images/reach.jpg) no-repeat 0 0; display: inline-block; text-indent: -9999px; width:60px; height:18px; position: relative; top:-5px;}
+a.reach {background:transparent url(../../images/reach.jpg) no-repeat 0 0; display: inline-block; text-indent: -9999px; width:60px; height:18px; position: relative; top:-5px;}
 
 .ad {-webkit-box-shadow: 0 0 5px #bdbdbd;}
