@@ -102,7 +102,7 @@ class Display extends CI_Controller {
 		$this->load->helper('file');
 		
 
-		$location = "/ads/".$data['app_location'];
+		$location = "/assets/weekly_ad/ads/".$data['app_location'];
 		$files = get_filenames($location);
 		
 		var_dump($location);
