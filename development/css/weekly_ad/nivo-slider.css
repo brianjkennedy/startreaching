@@ -68,15 +68,24 @@
 /* Direction nav styles (e.g. Next & Prev) */
 .nivo-directionNav a {
 	position:absolute;
-	top:45%;
+	/* top:45%; */
+	top:0;
 	z-index:9;
 	cursor:pointer;
+	text-indent:-9999px;
+	display: block;
+	height:100%;
+	min-width: 35px;
 }
 .nivo-prevNav {
 	left:0px;
+	background:#dedede url(../../images/weekly_ad/left.png) no-repeat 50% 0;
+	opacity: .8;
 }
 .nivo-nextNav {
 	right:0px;
+	background:#dedede url(../../images/weekly_ad/right.png) no-repeat 50% 0;
+	opacity: .8;
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav a {
