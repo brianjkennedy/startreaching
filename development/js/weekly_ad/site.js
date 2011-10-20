@@ -11,7 +11,10 @@ $('#ads').before('<div id="nav">').cycle({
 
 	$("#ads").nivoSlider({
 		effect: 'fade',
-		manualAdvance: true
+		manualAdvance: true,
+		animSpeed: 200,
+		prevText: "",
+		nextText: ""
 	});
 	
 	var $height;
