@@ -3,7 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Test</title>
-
+<link href="../css/payroll/styles.css" rel='stylesheet'></link>
+<script src='http://tools.startreaching.us/js/jquery.latest.js' type='text/javascript'></script>
+<script src='../js/payroll/site.js' type='text/javascript'></script>
 </head>
 
 <body>
